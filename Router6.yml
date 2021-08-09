@@ -1,13 +1,14 @@
 ---
-- name: tao loopback
+- name: TaoLoopback
   hosts: all
   gather_facts: no
 
   tasks:
-   - name: dat ip loopback 0
-     ios_l3_interface:    	    
-      name: loopback 0
-      ipv4: 7.7.7.7/32
+    - name: dat ip cho loopback
+      ios_l3_interface:
+        name: loopback 0
+        ipv4: 7.7.7.7/32
+
     - name: Show ip
       ios_command:
         commands:
